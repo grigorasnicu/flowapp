@@ -1,0 +1,52 @@
+<main class="container">
+    <div class="signup_card">
+        <div class="card">
+            <div class="card-header">
+                LOGIN
+            </div>
+
+            <div class="signup_divider">
+                <img src="../img/signup.svg" alt="user">
+            </div>
+
+            <div class="card-content">
+                <form id="form" class="row" name="signupForm" ng-submit="doLogin()" novalidate>
+
+
+
+                    <div class="input-field col s12" ng-hide="!formError.isError">
+
+                        <input id="username" type="text" class="validate" ng-model="message.username"
+                               ng-class="{'invalid': serverFormFeedback.username === false, 'valid': serverFormFeedback.username === true}">
+                        <label for="username">Username</label>
+                        <div class="form_error" ng-show="!formError.username">Nu ați introdus niciun mesaj!</div>
+                    </div>
+
+                    <div class="input-field col s12" ng-hide="!formError.isError">
+
+                        <input id="password" class="" type="password" ng-model="message.message"
+                               ng-class="{'invalid': serverFormFeedback.password === false, 'valid': serverFormFeedback.password === true}">
+                        <label for="password">Password</label>
+                        <div class="form_error" ng-show="!formError.password">Nu ați introdus niciun mesaj!</div>
+                    </div>
+
+                    <div class="submit_button col s12 center-align" ng-hide="!formError.isError">
+
+                        <!--<a class="waves-effect waves-teal btn-flat" type="submit">-->
+                        <!--<i class="fa fa-send-o left" aria-hidden="true"></i>-->
+                        <!--Trimite</a>-->
+                        <button class="waves-effect waves-teal btn-flat" type="submit"><i class="fa fa-send-o left"
+                                                                                          aria-hidden="true"></i>LOGIN
+                        </button>
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</main>

@@ -1,0 +1,80 @@
+<main class="container">
+    <div class="signup_card">
+        <div class="card">
+            <div class="card-header">
+                Sign Up
+            </div>
+
+            <div class="signup_divider">
+                <img src="../img/signup.svg" alt="user">
+        </div>
+
+            <div class="card-content">
+                <form id="form" class="row" name="signupForm" ng-submit="doSignup()" novalidate>
+
+
+                    <div class="input-field col s12 m12 l12 animated" ng-hide="!formError.isError"
+                         ng-class="{'fadeOut':!formError.isError}">
+
+                        <input name="firstName" id="first_name" type="text" class="validate" ng-model="message.firstName"
+                               ng-class="{'invalid': serverFormFeedback.firstnName === false, 'valid': serverFormFeedback.firstName === true}">
+                        <label for="first_name">First Name</label>
+                        <div class="form_error" ng-show="!formError.firstName">Am dori să știm cum vă numiți!</div>
+                    </div>
+
+
+                    <div class="input-field col s12 m12 l12" ng-hide="!formError.isError">
+
+                        <input id="lastName" type="text" class="validate" ng-model="message.lastName"
+                               ng-class="{'invalid': serverFormFeedback.lastName === false, 'valid': serverFormFeedback.lastName === true}">
+                        <label for="lastName">Last Name</label>
+                        <div class="form_error" ng-show="!formError.lastName"> Am dori să știm cum vă numiți!
+                        </div>
+                    </div>
+
+                    <div class="input-field col s12 m12 l12" ng-hide="!formError.isError">
+
+                        <input id="email" type="text" class="validate" ng-model="message.email"
+                               ng-class="{'invalid': serverFormFeedback.email === false, 'valid': serverFormFeedback.email === true}">
+                        <label for="email">Email</label>
+                        <div class="form_error" ng-show="!formError.email">Vă rugăm să introduceți o adresă de email
+                            validă!
+                        </div>
+                    </div>
+
+                    <div class="input-field col s12" ng-hide="!formError.isError">
+
+                        <input id="username" type="text" class="validate" ng-model="message.username"
+                                  ng-class="{'invalid': serverFormFeedback.username === false, 'valid': serverFormFeedback.username === true}">
+                        <label for="username">Username</label>
+                        <div class="form_error" ng-show="!formError.username">Va rugam sa introduceti un username!</div>
+                    </div>
+
+                    <div class="input-field col s12" ng-hide="!formError.isError">
+
+                        <input id="password" class="" type="password" ng-model="message.message"
+                               ng-class="{'invalid': serverFormFeedback.password === false, 'valid': serverFormFeedback.password === true}">
+                        <label for="password">Password</label>
+                        <div class="form_error" ng-show="!formError.password">Va rugam sa introduceti o parola!</div>
+                    </div>
+
+                    <div class="submit_button col s12 center-align" ng-hide="!formError.isError">
+
+                        <!--<a class="waves-effect waves-teal btn-flat" type="submit">-->
+                        <!--<i class="fa fa-send-o left" aria-hidden="true"></i>-->
+                        <!--Trimite</a>-->
+                        <button class="waves-effect waves-teal btn-flat" type="submit"><i class="fa fa-send-o left"
+                                                                                          aria-hidden="true"></i>SIGN UP
+                        </button>
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</main>

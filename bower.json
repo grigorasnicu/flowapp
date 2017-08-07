@@ -1,0 +1,29 @@
+{
+  "name": "bd_web",
+  "description": "Web app for Bitdefender Tech Challenge 2017",
+  "main": "index.js",
+  "authors": [
+    "Team 1"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bitdefender"
+  ],
+  "homepage": "no",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "angular-route": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-resource": "^1.5.3",
+    "angular-mocks": "^1.5.3"
+  }
+}

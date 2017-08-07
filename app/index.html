@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bdApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="style/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="style/desktop.css">
+</head>
+<body>
+
+<div ui-view="header" autoscroll="true"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
+
+
+<!--Scripts-->
+
+<!-- build:js scripts/main.js -->
+<script src="assets/jquery/dist/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+
+<script src="scripts/materialize.js"></script>
+<script src="scripts/init.js"></script>
+<script src="assets/angular/angular.min.js"></script>
+<script src="assets/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="assets/angular-resource/angular-resource.min.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers.js"></script>
+<!--<script src="scripts/services.js"></script>-->
+
+
+
+<!-- endbuild -->
+<script src="https://use.fontawesome.com/7c9678371e.js"></script>
+
+</body>
+</html>
